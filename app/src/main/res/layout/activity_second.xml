@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Second Activity"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Data From First Activity:"
+            android:textSize="18dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_vertical"
+            android:textColor="#FF0000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/second_et"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="pls input data for First Activity"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/second_ok_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="OK"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
